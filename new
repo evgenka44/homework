@@ -1,1 +1,29 @@
+public class Lesson1 {
+    private String name;
+    private int age;
+    private static final String lesson = "Programming";
 
+    Lesson1(String a, int b) {
+        this.name = a;
+        this.age = b;
+    }
+    Lesson1() {
+    }
+    public static void main(String[] args) {
+        Lesson1 teacher = new Lesson1("Nikolai", 40);
+        System.out.println("Имя преподавателя: " + teacher.getName());
+        teacher.setName("Vladimir");
+        System.out.println("Имя преподавателя: " + teacher.name);
+        System.out.println("Название предмета: Programming");
+        System.out.println("Возраст преподавателя: " + teacher.getAge());
+    }
+    public String getName() {
+        return this.name;
+    }
+    public void setName(String imya) {
+        this.name = imya;
+    }
+    public int getAge() {
+        return this.age;
+    }
+}
